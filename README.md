@@ -71,7 +71,7 @@ Metadata is UTF-8 JSON, at most 65536 bytes, with exactly these required fields:
 > [!IMPORTANT]
 > All future publishers must run the guard (Python 3.11+, standard library):
  
-```py
+```powershell
 python scripts/client-release-guard.py --tag client-vX.Y.Z --channel stable --zip SGP_ClientPatch_X.Y.Z.zip --metadata SGP_ClientPatch_X.Y.Z.meta.json
 ```
  
@@ -91,7 +91,7 @@ create a new Draft, download and verify both assets, and make it public.
  
 **Guard self-checks:**
  
-```py
+```powershell
 python scripts/test_client_release_guard.py
 ```
  
